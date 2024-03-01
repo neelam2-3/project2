@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>red jutti</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+<body>
+       
+  <div class="me">
+    <h1>Foot N Fit Company</h1>
+    
+     </div>
+    
+   
+<a name="up" class="up">
+<section class="section">
+       <header class="header">
+                <nav class="navbar"> 
+                  
+                  <div class="logo">
+                    <img src="logo...jpg" >
+                  </div>
+                    
+                     
+                     <div class="links">
+                      
+                       
+                     
+                      <a href="index.html" > Home</a>                      
+                      <a href="type.html" target="_blank" >About</a>
+                     <a href="women.html" target="_blank" >Women</a>                        
+                     <a href="men.html" target="_blank" >Men</a>                     
+                     <a href="" target="_blank" >Kids</a>
+                     
+                      <a href="contact.html" target="_blank">Contact</a>
+                      
+                         
+                       </div>   
+                      <div class="mecontainer">
+                      
+                       
+
+   
+                        
+                        <ion-icon name="cart-outline" id="addToCartIcon"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <ion-icon name="search-outline" id="searchButton"></ion-icon>
+                      </div>
+                                                <!-- Search dialog box -->
+                                                <div class="dialog" id="searchDialog">
+                                                  <h2>Search</h2>
+                                                  <input type="text" id="searchInput" placeholder="Enter your search query">
+                                                  <button id="searchDialogClose">Close</button>
+                                                </div>
+                </nav>
+                </header>
+                <div class="dialog" id="addToCartDialog">
+                  <h2>Item Added to Cart!</h2>
+                  <!-- You can customize the content of the dialog as per your requirement -->
+                  <button id="closeDialogButton">Close</button>
+                </div>
+                <script>
+                  // Get references to search button and dialog box elements
+                  const searchButton = document.getElementById('searchButton');
+                  const searchDialog = document.getElementById('searchDialog');
+                  const searchDialogClose = document.getElementById('searchDialogClose');
+                
+                  // Show the search dialog when the search button is clicked
+                  searchButton.addEventListener('click', function() {
+                    searchDialog.style.display = 'block';
+                  });
+                
+                  // Close the search dialog when the close button is clicked
+                  searchDialogClose.addEventListener('click', function() {
+                    searchDialog.style.display = 'none';
+                  });
+                
+                  // Optionally, you can also close the search dialog when the user clicks outside of it
+                  window.addEventListener('click', function(event) {
+                    if (event.target === searchDialog) {
+                      searchDialog.style.display = 'none';
+                    }
+                  });
+                
+                  // Prevent clicks inside the dialog from closing the dialog
+                  searchDialog.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                  });
+                </script>
+                <script>
+                  // Get references to add to cart icon and dialog box elements
+                  const addToCartIcon = document.getElementById('addToCartIcon');
+                  const addToCartDialog = document.getElementById('addToCartDialog');
+                  const closeDialogButton = document.getElementById('closeDialogButton');
+                
+                  // Show the add to cart dialog when the add to cart icon is clicked
+                  addToCartIcon.addEventListener('click', function() {
+                    addToCartDialog.style.display = 'block';
+                  });
+                
+                  // Close the add to cart dialog when the close button is clicked
+                  closeDialogButton.addEventListener('click', function() {
+                    addToCartDialog.style.display = 'none';
+                  });
+                
+                  // Optionally, you can also close the add to cart dialog when the user clicks outside of it
+                  window.addEventListener('click', function(event) {
+                    if (event.target === addToCartDialog) {
+                      addToCartDialog.style.display = 'none';
+                    }
+                  });
+                
+                  // Prevent clicks inside the dialog from closing the dialog
+                  addToCartDialog.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                  });
+                </script>
+<div class="product-card">
+    <div class = "main-wrapper">
+        <div class = "contain">
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                      <img src = "jutti.1.webp" alt = "watch">
+                    </div>
+                    <div class = "hover-container">
+                        <div><img src = "p1.webp"></div>
+                        <div><img src = "p2.webp"></div>
+                        <div><img src = "p3.webp"></div>
+                        <div><img src = "p4.webp"></div>
+                      
+                    </div>
+                </div>
+                <div class = "product-div-right">
+                    <span class = "product-name">Pretty pink embroidery jutti</span>
+                    <span class = "product-price">Rs.1000</span>
+                    <div class = "product-rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star-half-alt"></i></span>
+                        <span>(350 ratings)</span>
+                    </div>
+                    <p class = "product-description">Most beautiful punjabi jutti is waiting for you.Available in all size</p>
+                    <div class = "btn-groups">
+                        <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>add to cart</button>
+                        <button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const productCards = document.querySelectorAll('.product-card');
+      
+        productCards.forEach((card) => {
+            const allHoverImages = card.querySelectorAll('.hover-container div img');
+            const imgContainer = card.querySelector('.img-container');
+      
+            allHoverImages[0].parentElement.classList.add('active');
+      
+            allHoverImages.forEach((image) => {
+                image.addEventListener('mouseover', () =>{
+                    imgContainer.querySelector('img').src = image.src;
+                    resetActiveImg();
+                    image.parentElement.classList.add('active');
+                });
+            });
+      
+            function resetActiveImg(){
+                allHoverImages.forEach((img) => {
+                    img.parentElement.classList.remove('active');
+                  
+                });
+            }
+        });
+      });
+      </script>
+      
+    <!-- /*-------------------------------
+           new arrivals section
+      ------------------------------- */   -->
+      <a name="arrivals">
+        <section class="image-section ">
+             <h2>Recents</h2>
+              <div class="grid1 grid-three sale-sec images">
+              
+                <a href="mochi1.html">
+                  <div><figure> <img src="kids2.webp" class="img1"> <figcaption> Formal sandals </figcaption>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <p>Rs.1500</p></figure></div></a>
+                   <a href="sneakers pink.html"> 
+                     <div><figure> <img src="s1.jpg" class="img1"><figcaption>Sneakers shoes</figcaption> 
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star-o" ></i>
+                       <p>Rs.700</p>
+                     </figure></div></a>
+                     <a href="type1.html">
+                   <div><figure> <img src="jutti3.webp" class="img1"><figcaption>Blue droplets handcrafted women's punjabi leather jutti</figcaption> 
+                     <i class="fa fa-star" ></i>
+                     <i class="fa fa-star" ></i>
+                     <i class="fa fa-star" ></i>
+                     <i class="fa fa-star" ></i>
+                     <i class="fa fa-star-o" ></i>
+                     <p>Rs.1500</p>
+                   </figure></div></a>
+                   <a href="golden jutti.html"> 
+                     <div><figure> <img src="jutti4.jpg" class="img1"><figcaption>Golden jutti</figcaption> 
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star-o" ></i>
+                       <p>Rs.1000</p>
+                     </figure></div></a>
+                 </div></section>
+                  </a>
+       <footer class="footer2 section-footer  ">
+        <div class=" grid grid-four wrap justify-content">
+             <div class="f-about  ">
+              <h3>about</h3>
+              <p>The world's largest athletic apparel company, Nike is best known for its footwear, apparel, and equipment. Founded in 1964 as Blue Ribbon Sports, the company became Nike in 1971 after the Greek goddess of victory. One of the most valuable brands among sport businesses, Nike employs over 76,000 people worldwide.</p>
+             </div> 
+                <div class="f-links">
+                  <h3>Links</h3>
+                  <ul>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="index.html">home</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="type.html">about</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="women.html">women</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="men.html">men</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="kids.html">kids</a></li>
+                   <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="contact.html">contact</a></li>
+                  </ul>
+                </div>
+                <div class="f-services ">
+                  <h3>services</h3>
+                  <ul>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">designing</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">marketing</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">athletic footwear</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">apparel</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">services for sports </a></li>
+                  </ul>
+                </div>
+                <div class="f-address">
+                  <h3> Have a Question?</h3>
+                  <address>
+                    <div>
+                      <p>
+                         <span><ion-icon name="location-outline" role="img" class="md hydrated"></ion-icon>Amritsar, Punjab.</span> 
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                         <span><ion-icon name="call-outline" role="img" class="md hydrated"></ion-icon><a href="tel:+917710620140">+91 7710620140</a></span>  
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                         <span><ion-icon name="mail-outline" role="img" class="md hydrated"></ion-icon></span><a href="gmailto:yadavn@gmail.com">yadavn@gmail.com</a> 
+                      </p>
+                    </div>
+                  </address>
+                 </div>
+      </div>
+    
+    
+                <div class="f-social-icons"> 
+          <a href="https://www.linkedin.com/in/gurleen-kaur-6658ba24b/" target="_blank"><ion-icon  class="linkedin"name="logo-linkedin" role="img"></ion-icon></a>
+    
+          <a href="https://github.com/kaurguru" target="_blank"><ion-icon class="github" name="logo-github" role="img"></ion-icon></a>
+    
+          <a href="https://www.youtube.com/@coding_with_ashna/videos" target="_blank"><ion-icon class="youtube" name="logo-youtube" role="img"></ion-icon></a>
+              </div>
+    
+              <div class="f-credits">
+                <p>Copyright @2023 All rights reserved.</p>
+                
+              </div>
+              <div style="float: right;">
+                <a href="#up"> <ion-icon name="arrow-up-circle-outline" class="arrow uper " ></ion-icon></a> 
+              </div>
+     
+    </footer>
+<script>
+let dropDown = document.getElementById("dropdown2");
+function togglemenu(){
+dropDown.classList.toggle("open2");
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+slidesPerView: 3,
+spaceBetween: 30,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
+</script>
+</body>
+</html>
+
+    
+
+
+
+
+
+
+   
+   
+   
